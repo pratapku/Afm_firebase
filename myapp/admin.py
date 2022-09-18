@@ -24,7 +24,7 @@ admin.site.register(subuseraccess)
 
 admin.site.register(subuserplace)
 admin.site.register(tempuser)
-# admin.site.register(Profile)
+admin.site.register(FirebaseDetails)
 
 
 

@@ -49,6 +49,7 @@ urlpatterns = [
     path('getalldatayouadded/', myapp_view.subuplaceget),
     path('subuserfindall/', myapp_view.subuserfind),
     path('subfindsubdata/', myapp_view.subuserfindsubuser),
+    path('notification/', myapp_view.fire),
 
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -143,7 +143,10 @@ class tempuser(models.Model):
     d_id = models.ForeignKey(device, on_delete=models.CASCADE, blank=True, null=True)
 
 
-
+class FirebaseDetails(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    d_id = models.OneToOneField(allDevices, on_delete=models.CASCADE,primary_key=True)
+    fcm = models.TextField()
 # class Videos(models.Model):
 #     video = EmbedVideoField()
 
